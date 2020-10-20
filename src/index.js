@@ -3,14 +3,11 @@
 
 module.exports = 
 function towelSort (matrix) {
-  
+  if(!matrix || matrix.length === 0) {
+    return [];
+  }
+
 let arr = matrix[0];
-
-if ( matrix.length === 0 || matrix === undefined ) {
-  return [];
-}
-
-
 
 for (i = 1; i < matrix.length; i++) {
 
